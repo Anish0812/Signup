@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Signup Page </h1>
+<form method="POST">
+{% csrf_token %}
+<input type="email" name="un"
+ placeholder="enter email address" required/>
+<br><br>
+
+<input type="submit" value="Register"/>
+
+
+</form>
+<h2> Password wuld be send to ur email address </h2>
+
+{{msg}}
+{% endblock %}
